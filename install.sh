@@ -156,7 +156,7 @@ start() {
       echo $VERSION > "$C9_DIR"/installed
       
       cd "$C9_DIR"
-      DOWNLOAD https://raw.githubusercontent.com/c9/install/master/packages/license-notice.md "Third-Party Licensing Notices.md"
+      DOWNLOAD https://raw.githubusercontent.com/c9open/install/master/packages/license-notice.md "Third-Party Licensing Notices.md"
       
       echo :Done.
     ;;
@@ -323,11 +323,11 @@ tmux_download(){
   echo ":N.B: This will take a while. To speed this up install tmux 2.2 manually on your machine and restart this process."
   
   echo ":Downloading Libevent..."
-  DOWNLOAD https://raw.githubusercontent.com/c9/install/master/packages/tmux/libevent-2.1.8-stable.tar.gz libevent-2.1.8-stable.tar.gz
+  DOWNLOAD https://raw.githubusercontent.com/c9open/install/master/packages/tmux/libevent-2.1.8-stable.tar.gz libevent-2.1.8-stable.tar.gz
   echo ":Downloading Ncurses..."
-  DOWNLOAD https://github.com/c9/install/raw/master/packages/tmux/ncurses-6.0.tar.gz ncurses-6.0.tar.gz
+  DOWNLOAD https://github.com/c9open/install/raw/master/packages/tmux/ncurses-6.0.tar.gz ncurses-6.0.tar.gz
   echo ":Downloading Tmux..."
-  # DOWNLOAD https://raw.githubusercontent.com/c9/install/master/packages/tmux/tmux-1.9.tar.gz
+  # DOWNLOAD https://raw.githubusercontent.com/c9open/install/master/packages/tmux/tmux-1.9.tar.gz
   DOWNLOAD https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz tmux-2.2.tar.gz
 }
 
@@ -396,7 +396,7 @@ collab(){
   "$NPM" install sequelize@2.0.0-beta.0
   mkdir -p "$C9_DIR"/lib
   cd "$C9_DIR"/lib
-  DOWNLOAD https://raw.githubusercontent.com/c9/install/master/packages/sqlite3/linux/sqlite3.tar.gz sqlite3.tar.gz
+  DOWNLOAD https://raw.githubusercontent.com/c9open/install/master/packages/sqlite3/linux/sqlite3.tar.gz sqlite3.tar.gz
   tar xzf sqlite3.tar.gz
   rm sqlite3.tar.gz
   ln -sf "$C9_DIR"/lib/sqlite3/sqlite3 "$C9_DIR"/bin/sqlite3
@@ -404,7 +404,7 @@ collab(){
 
 nak(){
   echo :Installing Nak
-  "$NPM" install https://github.com/c9/nak/tarball/c9
+  "$NPM" install https://github.com/cloud9ideopen/nak/tarball/c9
 }
 
 ptyjs(){

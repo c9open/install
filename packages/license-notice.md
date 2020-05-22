@@ -13,7 +13,7 @@ Copyright (c) 2010-2014 Tim Caswell
 ** https://github.com/sequelize/sequelize 
 Copyright (c) 2014-present Sequelize contributors
 
-** https://github.com/cloud9ide/nak
+** https://github.com/cloud9ideopen/nak
 Copyright (c) 2013 Garen Torikian
 
 ** https://www.npmjs.com/package/pty.js/
